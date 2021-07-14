@@ -1,0 +1,286 @@
+/* common style start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/* common style end */
+
+/* header style start */
+.header{
+    background-color: #2d25a0;
+}
+
+.container{
+     padding: 20px;
+     display: flex;
+}
+
+.header-left, .header-right{
+ width: 50%;
+
+}
+.header-left h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-top: 207px;
+    margin-left: 156px;
+    margin-bottom: 27px;
+}
+
+.header-left button{
+    text-decoration: none;
+    width: 190px;
+    
+    margin-left: 156px;
+    padding: 10px 24px 10px 24px;
+    background: #E02C6D;
+   
+}
+.header-left button a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/*============
+ button animation start
+ ==================== */
+.header-left button:hover{
+    background-color: red;
+}
+/*============
+ button animation end
+ ==================== */
+
+
+ .header-right img{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+/* ============
+img animation start
+=============== */
+.header-right img:hover{
+    animation: kick 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@keyframes kick {
+    0% {
+      transform: translateZ(0) rotateY(0);
+    }
+    100% {
+      transform: translateZ(-260px) rotateY(-180deg);
+    }
+  }
+  /*===============
+   img animation end 
+   ===========*/
+/* header style end */
+
+
+  /* main section style start */
+.all-footballers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1050px;
+    margin: 0 auto;
+}
+.footballer{
+    
+    
+    margin: 15px 7.5px;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px 3px gray;
+    padding: 10px;
+}
+
+.footballer-image img{
+    width: 300px;
+    
+    margin: 15px;
+}
+  /* main section style end */
+
+
+ 
+ 
+  /* footer start  */
+ 
+.footer{
+    
+    
+    
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ 
+.football-logo img{
+    
+        width: 483.87px;
+        
+}
+
+.web-logo{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.web-logo a{
+    color: #969BAB;
+    font-size: 28px;
+    padding: 20px;
+}
+
+/* extra part start */
+.team-Argentina{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed brown;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+
+.download_app{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download_app h2, a{
+    padding: 10px 20px;
+
+}
+
+/* extra part end */
+
+/* for tablet */
+@media only screen and (min-width:689px) and (max-width:992px) {
+    
+    .all-footballers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+    .footballer {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center
+    }
+
+    
+    .container, .footer, .team-Argentina, .download_app{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        padding: 0px;
+        margin: 0px;
+    }
+    .header-left {
+        width: 100%;
+        margin: 0px;
+    }
+    .header-left h1{
+        margin:10px 10px 0px ;
+
+    }
+    .header-right{
+        width: 100%;
+    }
+    .header-right img{
+        width: 75%;
+    }
+    
+
+    }
+    
+    
+    /* for mobile */
+    @media only screen and (max-width:688px){
+
+        .all-footballers {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            margin: 0 auto;
+            }
+            
+            .footballer {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center
+            }
+        
+            
+            .container, .footer, .team-Argentina, .download_app{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .container{
+                padding: 0px;
+                margin: 0px;
+            }
+            .header-left {
+                width: 100%;
+                margin: 0px;
+            }
+            .header-left h1{
+                font-size: 18px;
+                margin:10px 10px 0px ;
+        
+            }
+            .header-right{
+                width: 100%;
+            }
+            .header-right img{
+                width: 75%;
+            }
+            .footballer-image img {
+                width: 100%;
+                margin: 0px;
+            }
+            
+            .team-Argentina iframe{
+                width: 100%;
+            }
+            .team-Argentina p{
+                padding: 5px;
+            }
+
+            .football-logo img{
+                width: 80%;
+            }
+            .header-left button{
+                margin: 10px;
+            }
+        
+            
+            
+    }
+
+
